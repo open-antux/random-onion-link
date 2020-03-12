@@ -1,0 +1,58 @@
+@font-face{
+  font-family: font-title;
+  src: url('../fonts/EarlyBird/EarlyBird-97nj.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: text;
+  src: url('../fonts/anonymous-pro/AnonymousPro-2O73w.ttf') format('truetype');
+}
+
+*{
+  color: white;
+}
+
+body{
+  background-color: #59316b;
+}
+
+.title{
+  position: absolute;
+  width: 100%;
+
+  font-family: font-title;
+  font-size: 200%;
+}
+
+.text{
+  font-family: text;
+}
+
+.description{
+  position: absolute;
+  width: 100%;
+  top: 20%;
+
+  font-size: 175%;
+}
+
+.textarea{
+  position: absolute;
+
+  top : 35%;
+  left: 30%;
+
+  width : 25%;
+  height: 5%;
+
+  background-color: white;
+}
+
+.site{
+  position: relative;
+  top: 28%;
+
+  text-align: center;
+  color: black;
+  font-size: normal;
+}
