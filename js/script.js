@@ -26,7 +26,7 @@ function copyIntoClipboard(){
 }
 
 function openNewTab(){
-  var link = document.getElementById("link");
+  var link = document.getElementById("link").innerText;
 
   window.open(link, "_blank").focus();
 }
