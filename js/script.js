@@ -1,7 +1,3 @@
-function init(){
-  // TODO: Seed the random function
-}
-
 function generateLink(){
   var charset = "qwertyuiopasdfghjklzxcvbnm1234567890";
   var link    = "";
