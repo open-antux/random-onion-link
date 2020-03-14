@@ -10,37 +10,25 @@
 
 *{
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 body{
   background-color: #59316b;
 }
 
-.title{
-  position: absolute;
-  width: 100%;
-
-  font-family: font-title;
-  font-size: 200%;
-}
-
-.text{
+.desc{
   font-family: text;
-}
-
-.description{
-  position: absolute;
-  width: 100%;
-  top: 20%;
-
-  font-size: 175%;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
 }
 
 .textarea{
-  position: absolute;
 
-  top : 35%;
-  left: 30%;
+  top : 32%;
+  left: 25%;
 
   width : 25%;
   height: 5%;
@@ -48,11 +36,116 @@ body{
   background-color: white;
 }
 
-.site{
-  position: relative;
-  top: 28%;
+.box{
+  width: 380px;
+  height: 70px;
+  border: 2px;
+  background-color: #FAFAFA;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(50%, -50%);
+}
 
+.comb{
+  color: #222;
+  font-family: text;
+  font-size: 30px;
+  padding: 20px 10px;
   text-align: center;
-  color: black;
-  font-size: normal;
+}
+ .green{
+   width: 80px;
+   height: 80px;
+ }
+ .green:hover{
+     background: #3ADF00;
+     color: #fff;
+     cursor: pointer;
+ }
+
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+}
+
+nav p{
+  font-family: text;
+  color: #222;
+  font-size: 24px;
+  line-height: 55px;
+  float: left;
+}
+
+nav ul li{
+  list-style: none;
+  color: #222;
+}
+
+nav ul li a{
+  font-family: text;
+  color: #222;
+  font-size: 24px;
+  padding: 24px 14px;
+  display: block;
+  text-decoration: none;
+  float: left;
+}
+
+nav img{
+  width: 13%;
+  padding: 0px 20px;
+}
+
+button{
+  background: none;
+  color: #fff;
+  width: 240px;
+  height: 80px;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-family: text;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+button:focus{
+  outline: none;
+}
+
+button:before{
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+button::after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, .2);
+  top: 0;
+  opacity: inherit;
+}
+
+button:hover{
+  background: #fff;
+  color: #59316B;
+  cursor: pointer;
+}
+
+button:hover::before{
+  opacity: .6;
+  transition: .7s;
+}
+
+button:hover::after{
+  opacity: 1;
+  transition: .7s;
+}
+
+button img{
 }
