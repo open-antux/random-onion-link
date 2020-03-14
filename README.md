@@ -3,4 +3,4 @@ Generator of random .onion link
 
 # Contributors
 - FrontEnd: [WalkingGarbage](https://github.com/WalkingGarbage)
-- BackEnd : [Superjolly002](https://github.com/Superjolly002)
+- BackEnd: [Superjolly002](https://github.com/Superjolly002)
