@@ -10,25 +10,31 @@
 
   <body>
     <nav>
-      <p><img src="img/ROL.png"></p>
+      <a href="#"><img src="img/ROL.png" title="ROL"></a>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="https://www.torproject.org/">TOR</a></li>
-        <li><a href="#">Ciao</a></li>
-        <li><a href="#">Menu</a></li>
+        <li><a href="https://www.torproject.org/" target="_blank">TOR</a></li>
+        <li><a href="https://github.com/Superjolly002/random-onion-link" target="_blank">GitHub</a></li>
+        <!--<li><a href="#">Menu</a></li>-->
       </ul>
     </nav>
 
     <p></br></p>
+
     <div class="desc">
       <p><center></br>This site randomly generates Onion links</br>Have fun!</center></p>
     </div>
+
     <div class="box">
-        <div id="link" class="comb">textarea</div>
+        <div id="link" class="comb" onclick="copyIntoClipboard();"></div>
     </div>
+
     <div class="btn">
-      <p></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
-      <center><button type="button">Refresh</button><button type="button" class="green">-></button></center>
+      <p></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+      <center>
+        <button type="button" onclick="generateLink();">Refresh</button>
+        <button type="button" class="green" onclick="openNewTab();">-></button>
+      </center>
     </div>
 
     <script>generateLink();</script>
