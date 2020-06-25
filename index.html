@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROL - Random Onion Link</title>
-    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="icon" href="img/ROL.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-
   <body>
-    <nav>
-      <a href="#"><img src="img/ROL.png" title="ROL"></a>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="https://www.torproject.org/" target="_blank" title="The Onion Project">TOR</a></li>
-        <li><a href="https://github.com/open-antux/random-onion-link" target="_blank" title="GitHub">GitHub</a></li>
-        <!--<li><a href="#">Menu</a></li>-->
-      </ul>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+        <div id="logo">
+          <a href="#"><img src="img/ROL.png" alt="ROL"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="https://www.torproject.org/" target="_blank">TOR</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/open-antux/random-onion-link" target="_blank">GitHub</a>
+            </li>
+        </ul>
+      </div>
     </nav>
 
-    <p></br></p>
+    <!-- Generator -->
+    <div class="cotainer-fluid">
+      <div class="row">
+        <div class="col-sm-12 desc" style="margin-top: 5%" align="center">
+          This site randomly generates Onion links</br>Have fun!
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="margin-top: 5%" align="center">
+          <div class="box">
+            <div id="link" align="center" class="comb" onclick="copyIntoClipboard();"></div>
+          </div>
 
-    <div class="desc">
-      <p><center></br>This site randomly generates Onion links</br>Have fun!</center></p>
-    </div>
-
-    <div class="box">
-        <div id="link" class="comb" onclick="copyIntoClipboard();"></div>
-    </div>
-
-    <div class="btn">
-      <p></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
-      <center>
-        <button type="button" onclick="generateLink();" title="Refresh">Refresh</button>
-        <button type="button" class="green" onclick="openNewTab();" title="Open in a new tab">-></button>
-      </center>
-    </div>
-
+          <div class="btn">
+            <center>
+              <button type="button" onclick="generateLink();" title="Refresh">Refresh</button>
+              <button type="button" class="green" onclick="openNewTab();" title="Open in a new tab">-></button>
+            </center>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>generateLink();</script>
-
   </body>
-
 </html>
