@@ -7,17 +7,18 @@
     <link rel="icon" href="img/ROL.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <body>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!--<a class="navbar-brand" href="#">Navbar</a>-->
-        <div id="logo">
+        <a class="logo" href="#"><img src="img/ROL.png" alt="ROL"></a>
+        <!--<div id="logo">
           <a href="#"><img src="img/ROL.png" alt="ROL"></a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        </div>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="changeStyle();">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: -100px;">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
@@ -57,7 +58,6 @@
     <!-- Javascript -->
     <script src="js/script.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>generateLink();</script>
   </body>
 </html>

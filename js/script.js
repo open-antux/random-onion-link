@@ -1,3 +1,5 @@
+bool = true;
+
 function generateLink(){
   var charset = "qwertyuiopasdfghjklzxcvbnm1234567890";
   var link    = "";
@@ -25,4 +27,9 @@ function openNewTab(){
   var link = "http://" + document.getElementById("link").innerText;
 
   window.open(link, "_blank").focus();
+}
+
+function changeStyle(){
+  (bool)?document.getElementById("navbarNav").style.removeProperty("margin-left"):document.getElementById("navbarNav").style.marginLeft = "-100px";
+  bool = !bool;
 }

@@ -46,7 +46,6 @@ body{
   border: 2px;
   background-color: #FAFAFA;
   border-radius: 12px;
-  
 }
 
 .comb{
@@ -76,12 +75,12 @@ nav ul li a{
   float: left;
 }
 
-#logo {
-  position: absolute;
+.logo {
+  /*position: absolute;*/
   width: 100px;
 }
 
-nav div img{
+nav a img{
   width: 90%;
 }
 
