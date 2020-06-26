@@ -76,7 +76,7 @@ nav ul li a{
 }
 
 .logo {
-  /*position: absolute;*/
+  z-index: 2;  
   width: 100px;
 }
 
