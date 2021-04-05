@@ -41,8 +41,8 @@ body{
 }
 
 .box{
-  width: 380px;
-  height: 70px;
+  width: min-content;
+  /* height: 70px; */
   border: 2px;
   background-color: #FAFAFA;
   border-radius: 12px;

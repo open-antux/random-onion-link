@@ -1,10 +1,23 @@
 bool = true;
+linkVersion = 3;
 
 function generateLink(){
   var charset = "qwertyuiopasdfghjklzxcvbnm1234567890";
   var link    = "";
 
-  for(var i = 0; i < 16; i++){
+  switch (linkVersion) {
+    case 2:
+      length = 16;
+      break;
+    case 3: 
+      length = 56;
+      break;
+    default:
+      length = 56;
+      break;
+  }
+
+  for(var i = 0; i < length; i++){
     link += charset[Math.floor(Math.random()*charset.length)];
   }
 
@@ -12,6 +25,11 @@ function generateLink(){
 
   document.getElementById("link").innerText = link;
 
+}
+
+function changeLinkVersion(version) {
+  linkVersion = version;
+  generateLink();
 }
 
 function copyIntoClipboard(){
